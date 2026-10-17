@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}img{max-width:100%}</style>
+<title>Hardwick Group</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Hardwick Group LLC. Roof inspections, storm and hail damage, roof replacement and repairs for homeowners in Flower Mound and North Texas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..900&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: sturdy horizontal bands like courses of brick; one maroon band carries the call to action */
+:root{
+  --maroon:#6E1F2B; --maroon-deep:#4A121B; --gold:#C79A3E; --gold-soft:#E9D3A0;
+  --bg:#F6F4F1; --surface:#FFFFFF; --ink:#22181A; --muted:#6B5E60; --line:#E3DCD6;
+  --on-maroon:#FBF4EA;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#171113; --surface:#211819; --ink:#F3ECE6; --muted:#B7A9A6; --line:#3A2C2E;
+  --maroon:#8E2A3A; --maroon-deep:#2C0C12; --gold:#D8AE55; --gold-soft:#5A4520; --on-maroon:#FBF4EA; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171113; --surface:#211819; --ink:#F3ECE6; --muted:#B7A9A6; --line:#3A2C2E;
+  --maroon:#8E2A3A; --maroon-deep:#2C0C12; --gold:#D8AE55; --gold-soft:#5A4520; --on-maroon:#FBF4EA; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4.3rem);font-weight:850;font-stretch:88%;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;font-stretch:92%}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+a{color:inherit}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* header */
+header{border-bottom:1px solid var(--line);background:var(--surface)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:36px;height:44px;flex:none}
+.brand b{font-family:var(--display);font-weight:850;font-size:1.25rem;font-stretch:90%;letter-spacing:.02em}
+.brand span{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:-2px}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:600;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--maroon)}
+
+/* hero */
+.hero{padding-block:clamp(48px,8vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:20px;min-width:0}
+.hero-copy p.lead{font-size:1.2rem;color:var(--muted);max-width:34em}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:4px;font-family:var(--display);font-weight:750;font-size:1rem;letter-spacing:.02em;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--maroon);color:var(--on-maroon)}
+.btn-primary:hover{background:var(--maroon-deep)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--gold)}
+.hero-mark{display:flex;justify-content:center}
+.hero-mark svg{width:min(260px,70%);height:auto}
+.proof{display:flex;gap:24px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}
+.proof span::before{content:"";display:inline-block;width:8px;height:8px;background:var(--gold);margin-right:8px;transform:rotate(45deg);vertical-align:1px}
+
+/* services */
+section{padding-block:clamp(56px,8vw,88px)}
+.section-head{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;max-width:40em}
+.section-head p{color:var(--muted)}
+.services{background:var(--surface);border-block:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc{background:var(--surface);padding:28px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.svc .num{font-family:var(--display);font-weight:800;color:var(--gold);font-size:.85rem;letter-spacing:.1em}
+.svc p{color:var(--muted);font-size:.98rem}
+
+/* claims process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+.step{display:flex;flex-direction:column;gap:8px;padding-top:18px;border-top:3px solid var(--maroon);min-width:0}
+.step h3::before{counter-increment:s;content:counter(s) ". ";color:var(--gold)}
+.step p{color:var(--muted);font-size:.98rem}
+.note{margin-top:32px;padding:18px 20px;border-left:4px solid var(--gold);background:var(--surface);font-size:.96rem;color:var(--muted);max-width:52em}
+.note strong{color:var(--ink)}
+
+/* area */
+.area .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.towns{display:flex;flex-wrap:wrap;gap:8px}
+.towns span{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-weight:600;font-size:.94rem}
+.towns span.home{border-color:var(--gold);background:var(--gold-soft)}
+
+/* about */
+.about{background:var(--surface);border-block:1px solid var(--line)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{color:var(--muted);margin-top:14px;max-width:36em}
+.values{display:flex;flex-direction:column;gap:18px}
+.values div{display:flex;flex-direction:column;gap:4px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.values b{font-family:var(--display);font-size:1.1rem}
+.values span{color:var(--muted)}
+
+/* contact band */
+.band{background:var(--maroon);color:var(--on-maroon);position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;inset:0;opacity:.09;pointer-events:none;
+  background-image:linear-gradient(var(--on-maroon) 2px,transparent 2px),linear-gradient(90deg,var(--on-maroon) 2px,transparent 2px),linear-gradient(90deg,var(--on-maroon) 2px,transparent 2px);
+  background-size:100% 28px,56px 56px,56px 56px;background-position:0 0,0 0,28px 28px}
+.band .wrap{position:relative;z-index:1;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.band h2{max-width:20em}
+.band p{opacity:.85;max-width:36em}
+.phone{font-family:var(--display);font-weight:850;font-size:clamp(2rem,5vw,3rem);font-stretch:90%;letter-spacing:.01em;user-select:all}
+.band .btn-gold{background:var(--gold);color:#2A1A0C}
+.band .btn-outline{border-color:rgba(251,244,234,.5);color:var(--on-maroon)}
+.copied{font-size:.9rem;opacity:.85;min-height:1.4em}
+
+footer{padding-block:28px;font-size:.88rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:880px){
+  .hero .wrap,.area .wrap,.about .wrap{grid-template-columns:1fr}
+  .hero-mark{order:-1;justify-content:flex-start}
+  .hero-mark svg{width:120px}
+  .grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){.steps{grid-template-columns:1fr} nav{gap:14px}}
+@media (prefers-reduced-motion:no-preference){
+  .hero-mark svg .cap{animation:rise .9s ease-out both}
+  @keyframes rise{from{transform:translateY(10px)}to{transform:none}}
+}
+</style>
+</head><body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="acorn" viewBox="0 0 120 150">
+      <!-- body: maroon brick acorn -->
+      <clipPath id="nut"><path d="M18 62 H102 C104 98 86 128 60 146 C34 128 16 98 18 62 Z"/></clipPath>
+      <path d="M18 62 H102 C104 98 86 128 60 146 C34 128 16 98 18 62 Z" fill="var(--maroon)"/>
+      <g clip-path="url(#nut)" stroke="var(--bg)" stroke-width="2.2" fill="none" opacity=".9">
+        <path d="M10 78H110M10 94H110M10 110H110M10 126H110"/>
+        <path d="M40 62V78M80 62V78M24 78V94M60 78V94M96 78V94M40 94V110M80 94V110M24 110V126M60 110V126M96 110V126M40 126V146M80 126V146"/>
+      </g>
+      <!-- cap: gold dome with upward arrow -->
+      <g class="cap">
+        <path d="M10 62 C10 38 34 24 60 24 C86 24 110 38 110 62 Z" fill="var(--gold)"/>
+        <path d="M60 30 L76 48 H66 V60 H54 V48 H44 Z" fill="var(--maroon)"/>
+        <rect x="56" y="6" width="8" height="20" rx="3" fill="var(--gold)"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Hardwick Group home">
+      <svg><use href="#acorn"/></svg>
+      <div><b>HARDWICK GROUP</b><span>Roofing &amp; Exteriors</span></div>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#storm">Storm damage</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Free inspection</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">Flower Mound &amp; North Texas</div>
+        <h1>A roof that keeps your home safe, strong and standing.</h1>
+        <p class="lead">Hardwick Group is a local, owner-run roofing company. We inspect roofs for hail and wind damage, replace and repair them, and walk you through the insurance process in plain English.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Book a free roof inspection</a>
+          <a class="btn btn-ghost" href="#storm">Had a storm? Start here</a>
+        </div>
+        <div class="proof">
+          <span>Free inspections, no pressure</span>
+          <span>Photo report of every finding</span>
+          <span>Owners on every job</span>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true"><svg viewBox="0 0 120 150"><use href="#acorn"/></svg></div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">What we do</div>
+        <h2>Roofing and exterior work for North Texas homes</h2>
+        <p>North Texas sits in one of the most active hail zones in the country. We focus on the work that keeps a house protected through it.</p>
+      </div>
+      <div class="grid">
+        <div class="svc"><div class="num">01</div><h3>Roof inspections</h3><p>A full look at shingles, flashing, vents and decking, with photos and a written summary you keep. Free.</p></div>
+        <div class="svc"><div class="num">02</div><h3>Hail &amp; wind damage</h3><p>We check for bruised and cracked shingles, lifted tabs and damaged metal, and document what we find.</p></div>
+        <div class="svc"><div class="num">03</div><h3>Roof replacement</h3><p>Full tear-off and new roof with quality architectural shingles, new underlayment and clean-up the same day.</p></div>
+        <div class="svc"><div class="num">04</div><h3>Roof repairs</h3><p>Leaks, missing shingles, flashing and vent boots fixed before small problems turn into ceiling stains.</p></div>
+        <div class="svc"><div class="num">05</div><h3>Gutters</h3><p>Seamless gutter replacement and repair so water leaves your roof and foundation the right way.</p></div>
+        <div class="svc"><div class="num">06</div><h3>Exterior restoration</h3><p>Siding, fascia, soffit and window screens damaged in the same storm, handled by one team.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="storm">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">After a storm</div>
+        <h2>How an insurance roof job works with us</h2>
+        <p>You own your claim. We do the roofing and give you clear documentation so you and your insurance company have what you need.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Free inspection</h3><p>We get on the roof, photograph any damage and tell you honestly whether it is worth filing a claim.</p></div>
+        <div class="step"><h3>You file the claim</h3><p>If there is real damage, you call your insurance company. We give you our photo report to share.</p></div>
+        <div class="step"><h3>Adjuster visit</h3><p>We can be on site when your adjuster inspects, to point out the damage we documented.</p></div>
+        <div class="step"><h3>We build</h3><p>Once your claim is approved, we schedule the job, install the new roof and clean up.</p></div>
+      </div>
+      <p class="note"><strong>Straight talk on deductibles.</strong> Texas law requires homeowners to pay their insurance deductible, and it is illegal for a contractor to waive or cover it. We never do. If a roofer offers to, walk away. We also do not act as your public adjuster; we are your roofer.</p>
+    </div>
+  </section>
+
+  <section class="area" id="area">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:0">
+        <div class="eyebrow">Service area</div>
+        <h2>Based in Flower Mound. Working across DFW.</h2>
+        <p>Do not see your city? Call us. If we can get there, we will.</p>
+      </div>
+      <div class="towns">
+        <span class="home">Flower Mound</span><span>Highland Village</span><span>Lewisville</span><span>Argyle</span><span>Bartonville</span><span>Double Oak</span><span>Copper Canyon</span><span>Denton</span><span>Corinth</span><span>Lantana</span><span>Southlake</span><span>Grapevine</span><span>Coppell</span><span>Carrollton</span><span>The Colony</span><span>Little Elm</span><span>Frisco</span><span>Keller</span><span>Trophy Club</span><span>Roanoke</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Who we are</div>
+        <h2>Named for strong, lasting things.</h2>
+        <p>Hardwoods grow from acorns. That is the idea behind our name and our mark: start with something solid and build on it. We started Hardwick Group to be the roofer we would want working on our own families' homes.</p>
+        <p>When you call, you talk to an owner. When we are on your roof, an owner is there too.</p>
+      </div>
+      <div class="values">
+        <div><b>Honest calls</b><span>If your roof does not need replacing, we will tell you.</span></div>
+        <div><b>Everything documented</b><span>Photos and written findings for every inspection and job.</span></div>
+        <div><b>Clean job sites</b><span>Magnetic sweep for nails and full clean-up before we leave.</span></div>
+        <div><b>Built to grow with you</b><span>Roofing today, and the rest of your home's exterior when you need it.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="contact">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--gold-soft)">Free roof inspection</div>
+      <h2>Call or text to book a free inspection. Most visits take under an hour.</h2>
+      <div class="phone" id="phone">(541) 515-9740</div>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="tel:+15415159740">Call now</a>
+        <button class="btn btn-outline" id="copy" type="button">Copy number</button>
+      </div>
+      <div class="copied" id="copied" aria-live="polite"></div>
+      <p>Tell us your address, the best time to reach you and whether you have had a recent storm. We will text back to confirm a time.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Hardwick Group LLC. Flower Mound, Texas.</span>
+    <span>Roofing &middot; Storm damage &middot; Exteriors</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var num = document.getElementById('phone').textContent.trim();
+  var out = document.getElementById('copied');
+  try{
+    navigator.clipboard.writeText(num).then(function(){ out.textContent = 'Number copied.'; }, function(){ select(); });
+  }catch(e){ select(); }
+  function select(){
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('phone'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    out.textContent = 'Number selected. Press copy on your device.';
+  }
+});
+</script>
+</body></html>
