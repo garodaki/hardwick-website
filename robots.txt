@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://garodaki.github.io/hardwick-website/sitemap.xml
